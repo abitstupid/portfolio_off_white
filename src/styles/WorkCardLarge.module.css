@@ -1,0 +1,124 @@
+@keyframes fadeIn {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoomIn {
+	0% {
+		transform: scale(0.7);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.workCardLargeWrapper {
+	width: 100%;
+}
+
+.workCardLarge {
+	width: inherit;
+	height: 350px;
+	background: var(--black);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+
+	position: relative;
+	z-index: 9;
+}
+
+.workCardLarge .workCardLargeImg {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	height: 100%;
+	object-fit: contain;
+
+	filter: brightness(60%);
+}
+
+/* .workCardLarge::before {
+	content: "view";
+	width: 100%;
+	height: 100%;
+
+	background: url("../assets/images/gradientBlue.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 7;
+
+	display: none;
+	align-items: center;
+	justify-content: center;
+
+	color: var(--primary-color);
+	font-size: 5rem;
+	font-family: "offbitDotBold";
+
+	filter: brightness(90%);
+} */
+
+/* .workCardLarge:hover::before {
+	display: flex;
+	animation: fadeIn 0.4s;
+} */
+
+.cardContentWrapper {
+	width: 90%;
+	max-width: 1280px;
+
+	display: flex;
+	flex-direction: row;
+	gap: var(--size-12);
+	flex-wrap: wrap;
+	align-items: flex-end;
+
+	position: absolute;
+	left: 50%;
+	bottom: calc(-2 * var(--size-48));
+	transform: translate(-50%, 0);
+}
+
+.cardContent {
+	width: 462px;
+
+	background: var(--white);
+
+	list-style-type: none;
+	text-decoration: none;
+
+	padding: var(--size-16);
+	border: 2px solid var(--black);
+
+	font-size: var(--size-14);
+	z-index: 8;
+}
+
+.cardContent * {
+	list-style-type: inherit;
+	text-decoration: inherit;
+}
+
+.cardButtons {
+	justify-content: flex-end;
+	gap: var(--size-20);
+}
+
+.cardViewProjectBtn {
+	width: 50%;
+	height: var(--size-64);
+	background: var(--black);
+	color: white;
+	font-size: 1.4rem;
+}

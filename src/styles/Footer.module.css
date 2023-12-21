@@ -1,0 +1,64 @@
+.footerWrapper {
+	position: relative;
+	height: 240px;
+	background: var(--accent-color);
+
+	overflow: hidden;
+}
+
+.footerName {
+	font-size: 5rem;
+	color: var(--primary-color);
+
+	position: absolute;
+	top: -16px;
+	left: 0;
+}
+
+.displayImg {
+	height: 100%;
+	position: absolute;
+	right: -16px;
+	top: 0;
+}
+
+.displayImg svg {
+	height: 100%;
+}
+
+.socialLinks {
+	height: 100%;
+	width: 100%;
+
+	justify-content: flex-start;
+	gap: var(--size-24);
+}
+
+.mail {
+	height: var(--size-48);
+
+	font-size: 1.5rem;
+	color: var(--primary-color);
+
+	padding-left: var(--size-16);
+	padding-right: var(--size-16);
+
+	background: var(--black);
+}
+
+.linkedIn {
+	background: var(--primary-color) url("../assets/images/footer/linkedIn.svg");
+}
+
+.git {
+	background: var(--primary-color) url("../assets/images/footer/git.svg");
+}
+
+.footerIcon {
+	height: var(--size-48);
+	width: var(--size-48);
+
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}

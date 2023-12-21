@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* SCROLLBAR UI */
+
+/* Works on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--black);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: var(--size-8);
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: var(--black);
+	border-radius: var(--size-4);
+}
+
+/* USER SELECTION COLORS
+*::selection {
+	background-color: ;
+	color: ;
+} */
+
+:root {
+	/*  colors*/
+	--primary-color: #c6c6c6;
+	--accent-color: #ff5200;
+	--tertiary-color: #0c0c57; /*blue */
+	--white: #f0f0f0;
+	--black: #2e2e2e;
+	--secondary-black: #686868;
+
+	/* sizes */
+
+	--size-2: 0.123rem;
+	--size-4: 0.25rem;
+	--size-8: calc(var(--size-4) * 2);
+	--size-12: calc(var(--size-4) * 3);
+	--size-14: calc(var(--size-2) * 7);
+	--size-16: calc(var(--size-4) * 4);
+	--size-18: calc(var(--size-2) * 9);
+	--size-20: calc(var(--size-4) * 5);
+	--size-24: calc(var(--size-4) * 6);
+	--size-28: calc(var(--size-4) * 7);
+	--size-32: calc(var(--size-4) * 8);
+	--size-36: calc(var(--size-4) * 9);
+	--size-40: calc(var(--size-4) * 10);
+	--size-48: calc(var(--size-4) * 12);
+	--size-64: calc(var(--size-4) * 16);
+}
+
+.visually-hidden {
+	/* Contain text within 1px box */
+	height: 1px;
+	overflow: hidden;
+	width: 1px;
+	/* Keep the layout */
+	position: absolute;
+	/* Remove any visible trace (e.g. background color) */
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	/* browsers in the future */
+	clip-path: inset(50%);
+	/* Prevent the screen reader to skip spaces between words */
+	white-space: nowrap;
+}
+
+/* LINKS UI */
+a,
+a:visited,
+a:active,
+a:focus,
+a:link {
+	color: var(--secondary-black);
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: var(--accent-color);
+	font-weight: 600;
+}
+
+body {
+	background: var(--primary-color);
+}
+/* FONTS */
+
+@font-face {
+	font-family: cascadiaCode;
+	src: url(./assets/fonts/cascadiaCode.ttf);
+}
+
+@font-face {
+	font-family: offbitDotBold;
+	src: url(./assets/fonts/offbitDotBold.ttf);
+}
+
+@font-face {
+	font-family: playfairDisplayVariable;
+	src: url(./assets/fonts/playfairDisplayVariable.ttf);
+}
+
+@font-face {
+	font-family: playfairDisplayVariableItalic;
+	src: url(./assets/fonts/playfairDisplayVariableItalic.ttf);
+}
+
+@keyframes letterSpacing {
+	0% {
+		letter-spacing: 0;
+	}
+	50% {
+		letter-spacing: 3px;
+	}
+	100% {
+		letter-spacing: 0;
+	}
+}
+
+/* CLASSES */
+.pointer {
+	cursor: pointer;
+}
+
+/* HOVER */
+.maxWidth {
+	max-width: 1280px;
+}
+
+.fontBody {
+	font-family: cascadiaCode;
+}
+
+.fontDisplay {
+	font-family: offbitDotBold;
+}
+
+.fontTertiary {
+	font-family: playfairDisplayVariable;
+}
+
+.fontTertiaryItalic {
+	font-family: playfairDisplayVariableItalic;
+}
+
+.h2Right {
+	color: var(--accent-color);
+	font-size: 6rem;
+	text-align: right;
+}
+
+.h2Left {
+	color: var(--accent-color);
+	font-size: 6rem;
+	text-align: left;
+}
+
+.h2Center {
+	color: var(--accent-color);
+	font-size: 6rem;
+	text-align: center;
+}
+
+.center,
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.column {
+	flex-direction: column;
+}
+
+/* MARGINS */
+
+.marginTopSectionMedium {
+	margin-top: var(--size-36);
+}
+
+.marginBottomSection {
+	margin-bottom: calc(var(--size-28) * 5);
+}
+
+.marginBottomSectionMedium {
+	margin-bottom: var(--size-36);
+}
+
+/* PADDINGS */
+.paddingBodyInline {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}

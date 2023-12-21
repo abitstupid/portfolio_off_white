@@ -1,0 +1,96 @@
+.nav {
+	height: 300px;
+	width: 300px;
+
+	overflow: hidden;
+
+	padding: var(--size-24);
+	border-radius: 66% 29% 61% 44% / 54% 46% 59% 23%;
+	background: url("../assets/images/gradientBlue.png");
+	background-size: cover;
+
+	position: fixed;
+	top: -48px;
+	right: -48px;
+	z-index: 9999;
+
+	transition: all 0.3s;
+}
+
+.nav::before {
+	content: "";
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+
+	border-radius: inherit;
+
+	background: #000000;
+	opacity: 0.1;
+}
+
+.navCls {
+	height: 154px;
+	width: 130px;
+
+	border-radius: 66% 29% 61% 100% / 54% 46% 59% 100%;
+	background: url("../assets/images/gradientBlue.png");
+	background-size: cover;
+
+	position: fixed;
+	top: -52px;
+	right: -52px;
+
+	padding: var(--size-24);
+}
+
+.nav .navLinkWrapper {
+	text-decoration: none;
+	list-style-type: none;
+
+	align-items: flex-start;
+	gap: var(--size-2);
+
+	font-size: var(--size-40);
+	color: var(--primary-color);
+	letter-spacing: 3px;
+
+	position: absolute;
+	bottom: 48px;
+	left: 40px;
+
+	z-index: 1;
+}
+
+.navLinkWrapperCls {
+	display: none;
+}
+
+/* LINKS UI */
+.navLink a,
+.navLink a:visited,
+.navLink a:active,
+.navLink a:link {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+.navLink a:hover,
+.navLink a:focus {
+	color: var(--accent-color);
+	font-weight: 600;
+}
+
+.clsBtn {
+	font-size: var(--size-40);
+	color: var(--primary-color);
+
+	position: fixed;
+	z-index: 2;
+	top: 16px;
+	right: 16px;
+}

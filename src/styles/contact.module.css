@@ -1,0 +1,14 @@
+.contact {
+	margin-top: 130px;
+}
+
+.contactFooterText {
+	height: 60vh;
+	font-size: 6rem;
+	transition: all 0.4s;
+}
+
+.contactFooterText:hover {
+	letter-spacing: 3px;
+	color: var(--accent-color);
+}

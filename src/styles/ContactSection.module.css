@@ -1,0 +1,99 @@
+@keyframes fadeIn {
+	0% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 0.5;
+	}
+}
+
+.contactWrapper {
+	width: 100%;
+	height: fit-content;
+}
+
+.contactWrapper {
+	height: 100%;
+	align-items: flex-start;
+}
+
+.one {
+	flex-basis: 70%;
+}
+
+.two {
+	flex-basis: 30%;
+	flex-shrink: 0;
+	align-items: normal;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	gap: var(--size-24);
+}
+
+input,
+textarea {
+	width: 90%;
+	height: var(--size-48);
+
+	font-family: inherit;
+	color: var(--accent-color);
+
+	display: block;
+	appearance: none;
+	outline: 0;
+	background: transparent;
+	border: 0px;
+	border-bottom: 2px solid var(--black);
+	resize: none;
+}
+
+textarea {
+	height: calc(var(--size-48) * 2);
+}
+
+.submitBtn {
+	width: 100%;
+	height: calc(var(--size-48) * 2);
+
+	color: var(--white);
+	font-size: var(--size-24);
+
+	appearance: none;
+	outline: 0;
+	background: var(--black);
+	border: 0px;
+
+	display: block;
+
+	position: relative;
+	z-index: 1;
+}
+
+.submitBtn::before {
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	content: "";
+	background: var(--black);
+	opacity: 0.5;
+	z-index: -1;
+
+	display: none;
+
+	animation: fadeIn 0.4s;
+}
+
+.submitBtn:hover::before {
+	background: url("../assets//images/gradientBlue.png");
+	color: var(--white);
+	animation: fadeIn 0.4s;
+}
+
+.submitBtn:hover::before {
+	display: block;
+}

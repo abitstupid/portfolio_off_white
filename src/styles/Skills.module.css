@@ -1,0 +1,84 @@
+.skillCardSection {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.skillCardWrapper {
+	flex-basis: 25%;
+}
+
+.skillType {
+	color: var(--secondary-black);
+}
+
+.skillCard {
+	height: 140px;
+	width: 140px;
+
+	background: var(--white);
+	flex-direction: column;
+	transition: all 0.4s;
+
+	position: relative;
+	z-index: 1;
+}
+
+.skillCard::before {
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	content: "";
+	background: var(--black);
+	opacity: 0.4;
+	z-index: -1;
+
+	display: none;
+}
+
+.skillIcon {
+	height: 80%;
+}
+
+.skillIcon img {
+	height: 40%;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+}
+
+.skillTitle {
+	height: 20%;
+	font-size: var(--size-14);
+}
+
+/* HOVER */
+
+.skillCard:hover {
+	background: var(--black);
+	color: var(--white);
+	transform: scale(1.5);
+	border-radius: var(--size-18);
+}
+
+.skillCard:hover::before {
+	background: url("../assets//images/gradientBlue.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: background 0.4s;
+	border-radius: inherit;
+}
+
+.skillCard:hover img {
+	filter: grayscale() invert() brightness(200%);
+	transition: all 0.4s;
+}
+
+.skillCard:hover::before {
+	display: block;
+}

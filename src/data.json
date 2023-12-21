@@ -1,0 +1,97 @@
+{
+	"nav": [
+		{ "serial": 1, "title": "work", "url": "/work" },
+		{ "serial": 2, "title": "about", "url": "/about" },
+		{ "serial": 3, "title": "contact", "url": "/contact" }
+	],
+	"authorInfo": {
+		"img": { "url": "/url", "alt": "Hemant Rai" },
+		"name": "Hemant Rai",
+		"description": "I'm a full stack developer"
+	},
+	"skills": [
+		{
+			"type": {
+				"title": "basic",
+				"skills": [
+					{
+						"serial": 0,
+						"icon": "./assets/images/skills/html.svg",
+						"title": "html"
+					},
+					{
+						"serial": 1,
+						"icon": "./assets/images/skills/css.svg",
+						"title": "css"
+					},
+					{
+						"serial": 2,
+						"icon": "./assets/images/skills/javascript.svg",
+						"title": "javascript"
+					},
+					{
+						"serial": 2,
+						"icon": "./assets/images/skills/react.svg",
+						"title": "react js"
+					}
+				]
+			}
+		},
+		{
+			"type": {
+				"title": "others in css",
+				"skills": [
+					{
+						"serial": 0,
+						"icon": "/assets/images/skills/bootStrap.svg",
+						"title": "bootstrap"
+					},
+					{
+						"serial": 1,
+						"icon": "/assets/images/skills/sass.svg",
+						"title": "sass"
+					},
+					{
+						"serial": 2,
+						"icon": "/assets/images/skills/openProps.png",
+						"title": "open props"
+					}
+				]
+			}
+		}
+	],
+	"projects": [
+		{
+			"serial": 0,
+			"title": "city reads",
+			"img": "/assets/images/projects/cityReads.png",
+			"tags": ["featured", "large"],
+			"url": "https://yashodhankaliaux.vercel.app/",
+			"visit": "/cityReads",
+			"description": "A priijwct about what it does and descriptioinA priijwct about what it does and descriptioinA priijwct about what it does and descriptioinA iijwct about what it does and descriptioinA priijwct about what it does and descriptioinA riijwct about"
+		},
+		{
+			"serial": 1,
+			"title": "brayan portfolio",
+			"img": "/assets/images/projects/brayan.png",
+			"tags": ["featured"],
+			"url": "https://brayanraihome.vercel.app/",
+			"description": "A priijwct about what it does and descriptioinA priijwct about what it does and descriptioinA priijwct about what it does and descriptioinA iijwct about what it does and descriptioinA priijwct about what it does and descriptioinA riijwct about"
+		},
+		{
+			"serial": 2,
+			"title": "B.cuz Cafe",
+			"img": "/assets/images/projects/bcuz.png",
+			"tags": ["featured"],
+			"url": "https://bcuzcafe.vercel.app/",
+			"description": "A priijwct about what it does and descriptioinA priijwct about what it does and descriptioinA priijwct about what it does and descriptioinA iijwct about what it does and descriptioinA priijwct about what it does and descriptioinA riijwct about"
+		},
+		{
+			"serial": 3,
+			"title": "",
+			"img": "/assets/images/projects/cityReads.png",
+			"tags": [],
+			"url": ""
+		}
+	]
+}
